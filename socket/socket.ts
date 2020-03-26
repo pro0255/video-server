@@ -85,26 +85,5 @@ export const initSocket = (socket: any) => {
       const message_data = JSON.parse(data);
       const receiver: User = getUser(message_data.reciever);
       receiver.socket.emit("Message", data);
-    })
-    .on("SignalingShareOffer", (shareOffer: SignalingData) => {
-      const receiver: User = getUser(shareOffer.receiver);
-      if (receiver) {
-        receiver.socket.emit("SignalingShareOffer", shareOffer);
-      }
-    })
-    .on("SignalingShareAnswer", (shareAnswer: SignalingData) => {
-      const receiver: User = getUser(shareAnswer.receiver);
-      if (receiver) {
-        receiver.socket.emit("SignalingShareAnswer", shareAnswer);
-      }
-    })
-    .on("EndShare", (id: string) => {
-      console.log(`End share is send`);
-      const receiver = getUser(id);
-      if (receiver) {
-        console.log(`If true receiver then really send`);
-        console.log(receiver.name, receiver.isCall, id);
-        receiver.socket.emit("EndShare");
-      }
     });
 };
