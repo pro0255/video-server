@@ -108,7 +108,3 @@ export const initSocket = (socket: any) => {
       }
     });
 };
-
-/*
- *   zavolam prijde nabidka a muze prijmout u kolize jeste jiny hovor ktery se vytvori..
- * */
