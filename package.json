@@ -1,0 +1,7 @@
+{
+  "name": "video-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "prokop <prokop@atlasgroup.cz>",
+  "license": "MIT"
+}
