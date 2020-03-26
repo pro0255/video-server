@@ -25,7 +25,7 @@ export const initSocket = (socket: any) => {
       console.log(`Disconnecting user with id ${socket.id} from server!`);
     })
     .on("EndCall", (data: SignalingData) => {
-      console.log(`Sending end call!`);
+      console.log(`EndCall ${data.user} => ${data.receiver}`);
       const peer: User = getUser(data.user);
       const endSender: User = getUser(data.receiver);
       if (endSender) {
@@ -39,7 +39,7 @@ export const initSocket = (socket: any) => {
       }
     })
     .on("SignalingOffer", (offer: SignalingData) => {
-      console.log(`Sending offer`);
+      console.log(`SignalingOffer ${offer.user} => ${offer.receiver}`);
       const caller = getUser(offer.user);
       if (caller) {
         caller.isCall = true;
@@ -58,19 +58,13 @@ export const initSocket = (socket: any) => {
         caller.socket.emit("ServerMessage", message);
       } else if (receiver && receiver.isCall) {
         //Receiver exituje ale uz je v hovoru
-        /*
-                let message: string = `This is a offer from server! ${offer.receiver}`;
-                receiver.socket.emit('AnotherOffer', offer);
-                socket.emit('EndCall');
-                socket.emit('ServerMessage', message);
-                 */
         receiver.socket.emit("SignalingOffer", offer);
         receiver.isCall = true;
         console.log(`Offer when receiver already calling! ${offer.receiver}`);
       }
     })
     .on("SignalingAnswer", (answer: SignalingData) => {
-      console.log(`Sending answer!`);
+      console.log(`SignalingAnswer ${answer.user} => ${answer.receiver}!`);
       const receiver: User = getUser(answer.receiver);
       if (receiver) {
         console.log(

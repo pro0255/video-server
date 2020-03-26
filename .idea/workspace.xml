@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab8849b8-a3ab-433b-a604-e1748270a06e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket/socket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/socket/socket.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585230544855</updated>
-      <workItem from="1585230545960" duration="1033000" />
+      <workItem from="1585230545960" duration="1283000" />
     </task>
     <task id="LOCAL-00001" summary="depen">
       <created>1585230848078</created>
@@ -65,7 +64,28 @@
       <option name="project" value="LOCAL" />
       <updated>1585230968571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updates">
+      <created>1585231597475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585231597475</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updates">
+      <created>1585231637726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585231637726</updated>
+    </task>
+    <task id="LOCAL-00005" summary="deleted share">
+      <created>1585231698365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585231698366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +105,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="depen" />
     <MESSAGE value="server inserted" />
-    <option name="LAST_COMMIT_MESSAGE" value="server inserted" />
+    <MESSAGE value="updates" />
+    <MESSAGE value="deleted share" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted share" />
   </component>
 </project>
